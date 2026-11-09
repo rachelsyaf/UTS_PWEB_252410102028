@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F8F5EF;
+    color: #493323;
+}
+
+/* Navbar */
+.navbar {
+    background: #493323;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-menu a:hover {
+    color: #D8B58A;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* Login */
+.login-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 350px;
+    background: white;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.login-box h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCC;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #493323;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #70533D;
+}
+
+/* Dashboard */
+.welcome {
+    padding: 35px 0;
+    border-bottom: 1px solid #D9CFC1;
+    margin-bottom: 30px;
+}
+
+.welcome h1 {
+    margin: 15px 0;
+    font-size: 32px;
+}
+
+.dashboard-card {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.about {
+    background: white;
+    padding: 25px;
+    line-height: 1.8;
+    border-radius: 8px;
+}
+
+/* Menu */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.menu-card {
+    background: white;
+    padding: 22px;
+    border-radius: 8px;
+}
+
+.menu-card h3 {
+    margin-bottom: 10px;
+}
+
+.menu-card h4 {
+    margin-top: 15px;
+    color: #9B653B;
+}
+
+/* Profile */
+.profile-box {
+    background: white;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 35px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.profile-box h1 {
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 75px;
+    height: 75px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background: #493323;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* Footer */
+.footer {
+    background: #493323;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .dashboard-card {
+        flex-direction: column;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+}
